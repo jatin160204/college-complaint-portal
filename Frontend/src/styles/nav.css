@@ -1,0 +1,49 @@
+.navbar {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+
+  padding-bottom: 30px;
+}
+.navbar .buttons button {
+  margin-top: 20px;
+  position: relative;
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px 12px;
+  margin: 14px 0px;
+  width: 200px;
+  flex-flow: row;
+  transition: color 0.4s ease;
+}
+
+.navbar .buttons button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.4s ease;
+}
+.navbar .buttons button:hover {
+  color: white;
+}
+
+.navbar .buttons button:hover::after {
+  width: 100%;
+}
+.navbar .logo {
+  margin-top: 0px;
+}
+.navbar .buttons .contact,
+.navbar .buttons .logout {
+  width: 170px;
+  padding-left: 30px;
+}

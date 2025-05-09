@@ -1,0 +1,167 @@
+.login-page {
+  /* border: 2px solid red; */
+  position: relative;
+  height: 712px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 800px;
+  display: flex;
+  padding: 20px;
+  border-radius: 40px; /* Rounded corners for the element */
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    #0d296b,
+    #071b4a,
+    #0d296b
+  ); /* Gradient colors */
+
+  z-index: 1; /* To ensure content appears above the shadow */
+}
+
+.login-container::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  right: 7px;
+  bottom: 7px;
+  background: linear-gradient(38deg, #0e3aa1, #041230, #0c3897);
+  border-radius: 40px; /* Same as the element border radius */
+  z-index: -1; /* To make sure the border appears behind the content */
+}
+
+.white {
+  color: black;
+  background-color: #f2f4f7;
+  height: 425px;
+  width: 360px;
+  border-radius: 40px;
+  position: absolute;
+  margin-left: 465px;
+}
+.white h2 {
+  color: black;
+  text-align: center;
+}
+.white form {
+  /* padding-left: 20px; */
+  border: none;
+  border-radius: 40px;
+  width: 340px;
+  height: 320px;
+  margin-left: 8px;
+  background-color: white;
+}
+
+.white .select,
+.white .username,
+.white .pass {
+  width: 285px;
+  height: 30px;
+  border: 1px solid rgb(162, 161, 161);
+  border-radius: 6px;
+}
+.white .select {
+  height: 34px;
+  width: 290px;
+  font-size: 16px;
+}
+.white form div {
+  font-size: 18px;
+  padding: 3px 26px;
+}
+.white form div p {
+  margin-bottom: 4px;
+  margin-top: 16px;
+}
+.white .checkbox span {
+  font-size: 16px;
+}
+
+.white button {
+  background-color: #0e3aa1;
+  width: 290px;
+  height: 34px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+.white button:hover {
+  background-color: #1043b9;
+  width: 290px;
+  /* border: 1px solid rgb(229, 225, 225); */
+  height: 34px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+input {
+  font-size: 16px;
+}
+
+.back-button {
+  border: none;
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  margin: 20px 20px;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+ 
+.back-button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white; /* Blue underline */
+    transition: width 0.3s ease;
+  }
+  .back-button:hover{
+    color: white; /* Change text color on hover */
+}
+
+.back-button:hover::after {
+    width: 100%; /* Underline expands to full width */
+  }
+
+.title {
+    /* display: none; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 30px;
+    font-family: "Arial";
+    /* font-weight: lighter; */
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    margin-left: 28px;
+  }
+.logo{
+    width: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 30px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 30px;
+    margin-left: 28px;
+}
